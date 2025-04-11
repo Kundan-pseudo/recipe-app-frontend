@@ -1,0 +1,59 @@
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.search-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.search-item:last-child {
+  border-bottom: none;
+}
+
+.search-item:hover,
+.search-item.selected {
+  background-color: #f8f9fa;
+}
+
+.recipe-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.recipe-cuisine {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.search-error {
+  color: #dc3545;
+  margin-top: 5px;
+  font-size: 0.875rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .search-container {
+    max-width: 100%;
+  }
+} 

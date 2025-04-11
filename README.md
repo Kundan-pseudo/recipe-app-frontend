@@ -1,46 +1,99 @@
-# Getting Started with Create React App
+# Recipe Finder Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based frontend application for searching and viewing recipes with a typeahead/autocomplete feature.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Typeahead/autocomplete search for recipes by name or cuisine
+- Responsive design for all device sizes
+- Detailed recipe view with ingredients and instructions
+- Clean, modern UI with Bootstrap styling
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```
+   git clone <repository-url>
+   cd recipe-app-frontend
+   ```
 
-### `npm run build`
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Configuration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a `.env` file in the root directory with the following variables:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+REACT_APP_API_URL=http://localhost:8080/api
+```
 
-### `npm run eject`
+Replace the URL with your backend API endpoint.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Running the Application
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Development Mode
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To start the development server:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm start
+```
 
-## Learn More
+This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Production Build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To create a production build:
+
+```
+npm run build
+```
+
+This will build the app for production to the `build` folder.
+
+## Project Structure
+
+The project follows atomic design principles:
+
+- **Atoms**: Basic building blocks (buttons, inputs, etc.)
+- **Molecules**: Simple combinations of atoms (search bar, cards, etc.)
+- **Organisms**: Complex UI components (header, recipe detail, etc.)
+- **Templates**: Page layouts
+- **Pages**: Complete pages
+
+## Testing
+
+To run tests:
+
+```
+npm test
+```
+
+## Code Coverage
+
+To check code coverage:
+
+```
+npm test -- --coverage
+```
+
+## Technologies Used
+
+- React
+- TypeScript
+- React Router
+- React Bootstrap
+- Axios
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

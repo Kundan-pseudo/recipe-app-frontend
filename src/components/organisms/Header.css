@@ -1,0 +1,24 @@
+.header {
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 0.5rem 0;
+  }
+  
+  .brand {
+    font-size: 1.2rem;
+  }
+  
+  .navbar-collapse {
+    padding: 1rem 0;
+  }
+} 
