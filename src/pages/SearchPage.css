@@ -5,16 +5,14 @@
 .search-container {
   text-align: center;
   padding: 2rem;
-  background-color: #f8f9fa;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .search-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #d1cdc7;
 }
 
 .search-subtitle {

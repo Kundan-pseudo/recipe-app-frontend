@@ -91,6 +91,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSelectRecipe }) => {
           onFocus={() => setIsDropdownVisible(true)}
           onKeyDown={handleKeyDown}
           aria-label="Recipe search"
+          className="search-input"
         />
         {isLoading && (
           <InputGroup.Text>

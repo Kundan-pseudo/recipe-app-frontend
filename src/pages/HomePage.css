@@ -4,7 +4,7 @@
 
 .hero-section {
   padding: 4rem 0;
-  background-color: #f8f9fa;
+  background-color: #1c1e1f;
   border-radius: 8px;
   margin-bottom: 3rem;
 }
@@ -13,7 +13,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: #212529;
+  color: #d1cdc7;
 }
 
 .hero-subtitle {
@@ -52,7 +52,7 @@
 .feature-card .card-title {
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #d1cdc7;
 }
 
 .feature-card .card-text {
@@ -82,3 +82,7 @@
     margin-bottom: 1.5rem;
   }
 } 
+
+.card-body {
+  background-color: #1c1e1f;
+}

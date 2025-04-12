@@ -3,6 +3,7 @@
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  background-color: #1c1e1f;
 }
 
 .search-dropdown {
@@ -57,3 +58,15 @@
     max-width: 100%;
   }
 } 
+
+.search-input {
+  border-color: #373c3e;
+  background-color:  #181a1b;
+  color: #d8d4cf;
+  height: 50px;
+}
+
+.search-input::placeholder {
+  color: #6c757d;
+  opacity: 0.8;
+}
